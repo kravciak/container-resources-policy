@@ -1,6 +1,6 @@
 ## Container resources policy
 
-This policy is designed to enforce constraints on the resource requirements  of
+His policy is designed to enforce constraints on the resource requirements  of
 Kubernetes containers. It follows a two-step verification process: initially
 checking whether the container has defined resource requirements, and
 subsequently ensuring that these resources fall within the permissible range

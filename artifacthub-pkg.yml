@@ -7,7 +7,7 @@
 version: 0.1.0-rc2
 name: container-resources
 displayName: Container Resources
-createdAt: 2024-02-07T16:56:46.547825736Z
+createdAt: 2024-02-14T15:29:10.720598476Z
 description: Policy is designed to enforce constraints on the resource requirements of Kubernetes containers
 license: Apache-2.0
 homeURL: https://github.com/kravciak/container-resources-policy
@@ -25,11 +25,11 @@ links:
 install: |
   The policy can be obtained using [`kwctl`](https://github.com/kubewarden/kwctl):
   ```console
-  kwctl pull ghcr.io/kubewarden/policies/container-resources:v0.1.0-rc2
+  kwctl pull ghcr.io/kravciak/policies/container-resources:v0.1.0-rc2
   ```
   Then, generate the policy manifest and tune it to your liking. For example:
   ```console
-  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kubewarden/policies/container-resources:v0.1.0-rc2
+  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kravciak/policies/container-resources:v0.1.0-rc2
   ```
 maintainers:
 - name: Kubewarden developers

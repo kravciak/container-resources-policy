@@ -10,7 +10,7 @@ displayName: Container Resources
 createdAt: 2024-02-07T16:56:46.547825736Z
 description: Policy is designed to enforce constraints on the resource requirements of Kubernetes containers
 license: Apache-2.0
-homeURL: https://github.com/kubewarden/container-resources-policy
+homeURL: https://github.com/kravciak/container-resources-policy
 containersImages:
 - name: policy
   image: ghcr.io/kubewarden/policies/container-resources:v0.1.0-rc2
@@ -21,7 +21,7 @@ links:
 - name: policy
   url: https://github.com/kubewarden/container-resources-policy/releases/download/v0.1.0-rc2/policy.wasm
 - name: source
-  url: https://github.com/kubewarden/container-resources-policy
+  url: https://github.com/kravciak/container-resources-policy
 install: |
   The policy can be obtained using [`kwctl`](https://github.com/kubewarden/kwctl):
   ```console

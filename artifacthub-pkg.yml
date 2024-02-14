@@ -13,13 +13,13 @@ license: Apache-2.0
 homeURL: https://github.com/kravciak/container-resources-policy
 containersImages:
 - name: policy
-  image: ghcr.io/kubewarden/policies/container-resources:v0.1.0-rc2
+  image: ghcr.io/kravciak/policies/container-resources:v0.1.0-rc2
 keywords:
 - container
 - resources
 links:
 - name: policy
-  url: https://github.com/kubewarden/container-resources-policy/releases/download/v0.1.0-rc2/policy.wasm
+  url: https://github.com/kravciak/container-resources-policy/releases/download/v0.1.0-rc2/policy.wasm
 - name: source
   url: https://github.com/kravciak/container-resources-policy
 install: |

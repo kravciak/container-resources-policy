@@ -4,32 +4,32 @@
 #
 # This config can be saved to its default location with:
 #   kwctl scaffold artifacthub > artifacthub-pkg.yml 
-version: 0.1.0-rc3
+version: 0.1.0-rc4
 name: container-resources
 displayName: QContainer Resources
-createdAt: 2024-02-15T07:31:41.191869155Z
+createdAt: 2024-02-16T09:07:38.629731134Z
 description: QPolicy is designed to enforce constraints on the resource requirements of Kubernetes containers
 license: Apache-2.0
 homeURL: https://github.com/kravciak/container-resources-policy
 containersImages:
 - name: policy
-  image: ghcr.io/kravciak/policies/container-resources:v0.1.0-rc3
+  image: ghcr.io/kravciak/policies/container-resources:v0.1.0-rc4
 keywords:
 - container
 - resources
 links:
 - name: policy
-  url: https://github.com/kravciak/container-resources-policy/releases/download/v0.1.0-rc3/policy.wasm
+  url: https://github.com/kravciak/container-resources-policy/releases/download/v0.1.0-rc4/policy.wasm
 - name: source
   url: https://github.com/kravciak/container-resources-policy
 install: |
   The policy can be obtained using [`kwctl`](https://github.com/kubewarden/kwctl):
   ```console
-  kwctl pull ghcr.io/kravciak/policies/container-resources:v0.1.0-rc3
+  kwctl pull ghcr.io/kravciak/policies/container-resources:v0.1.0-rc4
   ```
   Then, generate the policy manifest and tune it to your liking. For example:
   ```console
-  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kravciak/policies/container-resources:v0.1.0-rc3
+  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kravciak/policies/container-resources:v0.1.0-rc4
   ```
 maintainers:
 - name: QKubewarden developers
@@ -128,6 +128,7 @@ annotations:
       - pods
       operations:
       - CREATE
+      - UPDATE
     - apiGroups:
       - ''
       apiVersions:
@@ -145,7 +146,6 @@ annotations:
       - deployments
       - replicasets
       - statefulsets
-      - daemonsets
       operations:
       - CREATE
       - UPDATE

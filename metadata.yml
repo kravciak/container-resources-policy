@@ -7,6 +7,7 @@ rules:
       - pods
     operations:
       - CREATE
+      - UPDATE
   - apiGroups:
       - ""
     apiVersions:
@@ -24,7 +25,6 @@ rules:
       - deployments
       - replicasets
       - statefulsets
-      - daemonsets
     operations:
       - CREATE
       - UPDATE

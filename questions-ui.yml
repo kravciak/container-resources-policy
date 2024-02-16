@@ -12,7 +12,7 @@ questions:
 - default: {}
   description: Defines the limit and minimum amount requested for CPU resource
   group: Settings
-  label: CPU
+  label: QCPU
   hide_input: true
   type: map[
   variable: cpu

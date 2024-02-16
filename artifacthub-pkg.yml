@@ -7,7 +7,7 @@
 version: 0.1.0-rc4
 name: container-resources
 displayName: QContainer Resources
-createdAt: 2024-02-16T09:07:38.629731134Z
+createdAt: 2024-02-16T12:32:05.424938694Z
 description: QPolicy is designed to enforce constraints on the resource requirements of Kubernetes containers
 license: Apache-2.0
 homeURL: https://github.com/kravciak/container-resources-policy
@@ -55,7 +55,7 @@ annotations:
     - default: {}
       description: Defines the limit and minimum amount requested for CPU resource
       group: Settings
-      label: CPU
+      label: QCPU
       hide_input: true
       type: map[
       variable: cpu

@@ -4,32 +4,32 @@
 #
 # This config can be saved to its default location with:
 #   kwctl scaffold artifacthub > artifacthub-pkg.yml 
-version: 0.1.0-rc4
+version: 0.1.0-rc6
 name: container-resources
 displayName: QContainer Resources
-createdAt: 2024-02-16T12:32:05.424938694Z
+createdAt: 2024-02-16T14:15:44.458710872Z
 description: QPolicy is designed to enforce constraints on the resource requirements of Kubernetes containers
 license: Apache-2.0
 homeURL: https://github.com/kravciak/container-resources-policy
 containersImages:
 - name: policy
-  image: ghcr.io/kravciak/policies/container-resources:v0.1.0-rc4
+  image: ghcr.io/kravciak/policies/container-resources:v0.1.0-rc6
 keywords:
 - container
 - resources
 links:
 - name: policy
-  url: https://github.com/kravciak/container-resources-policy/releases/download/v0.1.0-rc4/policy.wasm
+  url: https://github.com/kravciak/container-resources-policy/releases/download/v0.1.0-rc6/policy.wasm
 - name: source
   url: https://github.com/kravciak/container-resources-policy
 install: |
   The policy can be obtained using [`kwctl`](https://github.com/kubewarden/kwctl):
   ```console
-  kwctl pull ghcr.io/kravciak/policies/container-resources:v0.1.0-rc4
+  kwctl pull ghcr.io/kravciak/policies/container-resources:v0.1.0-rc6
   ```
   Then, generate the policy manifest and tune it to your liking. For example:
   ```console
-  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kravciak/policies/container-resources:v0.1.0-rc4
+  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kravciak/policies/container-resources:v0.1.0-rc6
   ```
 maintainers:
 - name: QKubewarden developers
@@ -84,7 +84,7 @@ annotations:
     - default: {}
       description: Defines the limit and minimum amount requested for memory resource
       group: Settings
-      label: Memory
+      label: QMemory
       hide_input: true
       type: map[
       variable: memory

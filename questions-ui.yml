@@ -41,7 +41,7 @@ questions:
 - default: {}
   description: Defines the limit and minimum amount requested for memory resource
   group: Settings
-  label: Memory
+  label: QMemory
   hide_input: true
   type: map[
   variable: memory

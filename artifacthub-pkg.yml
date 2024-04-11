@@ -10,26 +10,26 @@ displayName: Container Resources
 createdAt: 2024-04-09T14:15:08.00895968Z
 description: Policy is designed to enforce constraints on the resource requirements of Kubernetes containers
 license: Apache-2.0
-homeURL: https://github.com/kubewarden/container-resources-policy
+homeURL: https://github.com/kravciak/container-resources-policy
 containersImages:
 - name: policy
-  image: ghcr.io/kubewarden/policies/container-resources:v0.2.2
+  image: ghcr.io/kravciak/policies/container-resources:v0.2.2
 keywords:
 - container
 - resources
 links:
 - name: policy
-  url: https://github.com/kubewarden/container-resources-policy/releases/download/v0.2.2/policy.wasm
+  url: https://github.com/kravciak/container-resources-policy/releases/download/v0.2.2/policy.wasm
 - name: source
-  url: https://github.com/kubewarden/container-resources-policy
+  url: https://github.com/kravciak/container-resources-policy
 install: |
-  The policy can be obtained using [`kwctl`](https://github.com/kubewarden/kwctl):
+  The policy can be obtained using [`kwctl`](https://github.com/kravciak/kwctl):
   ```console
-  kwctl pull ghcr.io/kubewarden/policies/container-resources:v0.2.2
+  kwctl pull ghcr.io/kravciak/policies/container-resources:v0.2.2
   ```
   Then, generate the policy manifest and tune it to your liking. For example:
   ```console
-  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kubewarden/policies/container-resources:v0.2.2
+  kwctl scaffold manifest -t ClusterAdmissionPolicy registry://ghcr.io/kravciak/policies/container-resources:v0.2.2
   ```
 maintainers:
 - name: Kubewarden developers

@@ -24,8 +24,7 @@ questions:
       type: boolean
       variable: cpu.ignoreValues
       tooltip: >-
-        If set true, skips the enforcement of specific values and only enforces
-        that requests and limits are set
+       Skip enforcement of specific values, but ensure that requests and limits are set
     - default: ''
       tooltip: >-
         Defines default minimum CPU requested.
@@ -65,8 +64,7 @@ questions:
       type: boolean
       variable: memory.ignoreValues
       tooltip: >-
-        If set true, skips the enforcement of specific values and only enforces
-        that requests and limits are set
+        Skip enforcement of specific values, but ensure that requests and limits are set
     - default: ''
       tooltip: >-
         Defines default minimum memory requested.

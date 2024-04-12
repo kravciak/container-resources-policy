@@ -7,7 +7,7 @@
 version: 0.2.2
 name: container-resources
 displayName: Container Resources
-createdAt: 2024-04-09T14:15:08.00895968Z
+createdAt: 2024-04-12T11:54:02.226315046Z
 description: Policy is designed to enforce constraints on the resource requirements of Kubernetes containers
 license: Apache-2.0
 homeURL: https://github.com/kubewarden/container-resources-policy
@@ -67,8 +67,7 @@ annotations:
           type: boolean
           variable: cpu.ignoreValues
           tooltip: >-
-            If set true, skips the enforcement of specific values and only enforces
-            that requests and limits are set
+           Skip enforcement of specific values, but ensure that requests and limits are set
         - default: ''
           tooltip: >-
             Defines default minimum CPU requested.
@@ -108,8 +107,7 @@ annotations:
           type: boolean
           variable: memory.ignoreValues
           tooltip: >-
-            If set true, skips the enforcement of specific values and only enforces
-            that requests and limits are set
+            Skip enforcement of specific values, but ensure that requests and limits are set
         - default: ''
           tooltip: >-
             Defines default minimum memory requested.
